@@ -198,7 +198,7 @@ button {
   }
 }
 .logo {
-  width: clamp(115px, 8.93vw, 170px);
+  width: clamp(80px, 7vw, 140px);
 }
 
 .ul-bs-row {
@@ -1233,6 +1233,7 @@ button {
 @media screen and (max-width: 575px) {
   .ul-banner-slide {
     padding: clamp(130px, 12.29vw, 310px) clamp(15px, 5.25vw, 100px) clamp(130px, 8.61vw, 240px);
+    height: 550px;
   }
 }
 .ul-banner-slide::before {
@@ -1748,6 +1749,7 @@ button {
   align-items: center;
   gap: clamp(7px, 0.79vw, 15px);
   padding: 0 clamp(9px, 0.63vw, 12px);
+  border: 0;
 }
 @media screen and (max-width: 479px) {
   .ul-property-filter-search-form button {
@@ -2495,7 +2497,7 @@ button {
   }
 }
 .ul-app-ad-content {
-  padding: clamp(30px, 3.15vw, 60px) clamp(15px, 4.2vw, 80px) 0;
+  padding: clamp(30px, 3.15vw, 60px) clamp(15px, 4.2vw, 80px);
   background-color: var(--ul-secondary);
   border-radius: clamp(15px, 1.58vw, 30px);
   overflow: hidden;
@@ -2507,7 +2509,7 @@ button {
   position: absolute;
   inset: 0;
   z-index: -1;
-  background: url(../img/ad-bg.jpg) no-repeat center center/cover;
+  background: url(../img/raagas/6.png) no-repeat center center/cover;
   opacity: 25%;
 }
 .ul-app-ad-txt {
@@ -2637,7 +2639,7 @@ button {
   position: absolute;
   inset: 0;
   z-index: -1;
-  background: url("../img/testimonial-bg.jpg") no-repeat center center/cover fixed;
+  background: url("../img/raagas/2.png") no-repeat center center/cover fixed;
   opacity: 10%;
 }
 .ul-testimonial-img {
@@ -2908,7 +2910,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: clamp(25px, 2.1vw, 40px) 0;
+  padding: 10px 0;
   flex-wrap: wrap;
   gap: 15px;
   background-color: var(--black);
@@ -5423,7 +5425,8 @@ button {
 }
 @media screen and (max-width: 479px) {
   .ul-contact-form-wrapper form {
-    grid-template-columns: repeat(1, 1fr);
+    /* grid-template-columns: repeat(1, 1fr); */
+    display: block;
   }
 }
 .ul-contact-form-wrapper form > *:nth-last-child(3), .ul-contact-form-wrapper form > *:nth-last-child(2) {
@@ -5483,3 +5486,11 @@ button {
 .ul-app-ad--contact {
   margin-top: clamp(-301px, -15.82vw, -60px);
 }/*# sourceMappingURL=style.css.map */
+
+
+.ul-property-filter-search-container form > :nth-last-child(2), .ul-property-filter-search-container form > :nth-last-child(3) {
+    grid-column: span 1;
+} 
+.ul-property-filter-search-container form > :nth-last-child(1){
+  grid-column: span 2;
+}

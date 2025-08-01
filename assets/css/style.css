@@ -44,7 +44,7 @@ CSS INDEX
   --black: #000;
   --white: #fff;
   --ul-primary: #9b5b30;
-  --ul-secondary: #000929;
+  --ul-secondary: #2a1a0e;
   --ul-gray: #EBEBEB;
   --ul-black: #111111;
   --ul-gray2: #6C6E76;
@@ -1287,6 +1287,7 @@ button {
   font-size: clamp(16px, 1.16vw, 22px);
   margin-bottom: clamp(20px, 2.89vw, 55px);
   max-width: 55%;
+  line-height: 1.5;
 }
 @media screen and (max-width: 991px) {
   .ul-banner-slide-descr {

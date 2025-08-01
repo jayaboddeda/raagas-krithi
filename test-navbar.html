@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Navbar Test</title>
+</head>
+<body>
+    <div id="navbar-container"></div>
+    <script>
+        // Test loading the navbar
+        fetch('components/navbar.html')
+            .then(response => {
+                console.log('Response status:', response.status);
+                console.log('Response ok:', response.ok);
+                return response.text();
+            })
+            .then(html => {
+                console.log('HTML loaded successfully');
+                document.getElementById('navbar-container').innerHTML = html;
+            })
+            .catch(error => {
+                console.error('Error loading navbar:', error);
+            });
+    </script>
+</body>
+</html>

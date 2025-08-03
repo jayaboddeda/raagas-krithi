@@ -260,6 +260,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
         slidesPerView: 1,
         loop: true,
         autoplay: true,
+        effect: "slide",
+        speed: 2000,
     });
 
     new Swiper(".ul-banner-slider", {

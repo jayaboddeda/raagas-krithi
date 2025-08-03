@@ -43,8 +43,10 @@ CSS INDEX
 :root {
   --black: #000;
   --white: #fff;
-  --ul-primary: #9b5b30;
-  --ul-secondary: #2a1a0e;
+  /* --ul-primary: #9b5b30;
+  --ul-secondary: #2a1a0e; */
+    --ul-primary: #2F61A3;
+  --ul-secondary: #000929;
   --ul-gray: #EBEBEB;
   --ul-black: #111111;
   --ul-gray2: #6C6E76;
@@ -198,7 +200,7 @@ button {
   }
 }
 .logo {
-  width: clamp(80px, 7vw, 140px);
+  width: 80px;
 }
 
 .ul-bs-row {
@@ -221,8 +223,8 @@ button {
 }
 
 .ul-section-spacing {
-  padding-top: clamp(60px, 6.31vw, 120px);
-  padding-bottom: clamp(60px, 6.31vw, 120px);
+  padding-top: clamp(30px, 6.31vw, 60px);
+  padding-bottom: clamp(30px, 6.31vw, 60px);
 }
 
 .wow {
@@ -874,8 +876,8 @@ button {
   background-color: var(--ul-primary);
   box-shadow: 0 15px 15px rgba(0, 0, 0, 0.03);
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  padding-top: clamp(17px, 1.05vw, 20px);
-  padding-bottom: clamp(17px, 1.05vw, 20px);
+  padding-top: clamp(10px, 1.05vw, 10px);
+  padding-bottom: clamp(10px, 1.05vw, 10px);
 }
 .ul-header-top {
   background: var(--ul-gradient);
@@ -5493,4 +5495,8 @@ button {
 } 
 .ul-property-filter-search-container form > :nth-last-child(1){
   grid-column: span 2;
+}
+
+.icon-custom-color {
+  filter: invert(37%) sepia(99%) saturate(2216%) hue-rotate(178deg) brightness(89%) contrast(91%);
 }
